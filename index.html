@@ -12,44 +12,49 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Product preview card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-product">
-      <img
-        class="image-perfume"
-        src="images/image-product-desktop.jpg"
-        alt="Image perfume"
-      />
+    <div class="main">
+      <div></div>
+      <div class="container-product">
+        <img
+          class="image-perfume"
+          src="images/image-product-desktop.jpg"
+          alt="Image perfume"
+        />
+        <div>
+          <h2 class="product-category">PERFUME</h2>
 
-      <h2 class="product-category">Perfume</h2>
+          <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
 
-      <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
-
-      <p class="description">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <p class="price">$149.99</p>
-      <p class="price">$169.99</p>
-      <img
-        class="icon-card"
-        src="/product-preview-card-component-main/images/icon-cart.svg"
-        alt="Icon card"
-      />
-      <button class="add-to-card">Add to Cart</button>
-
+          <p class="description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="prices">
+            <p class="price">$149.99</p>
+            <p class="original-price">$169.99</p>
+          </div>
+          <button class="add-to-cart">
+            <img
+              class="icon-cart"
+              src="/product-preview-card-component-main/images/icon-cart.svg"
+              alt="Icon cart"
+            />
+            <span> Add to Cart </span>
+          </button>
+        </div>
+      </div>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
