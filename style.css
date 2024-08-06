@@ -13,7 +13,7 @@
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(158, 36%, 37%);
 }
 
 .main {
@@ -23,6 +23,9 @@
   background-color: hsl(30, 38%, 92%);
   flex-direction: column;
   height: 100vh;
+}
+.image-perfume-mobile {
+  display: none;
 }
 
 .container-product {
@@ -94,7 +97,18 @@ span {
 }
 
 @media screen and (max-width: 767px) {
-  * {
-    border: 1px solid red;
+  .image-perfume {
+    display: none;
+  }
+
+  .container-product {
+    flex-direction: column;
+  }
+  .image-perfume-mobile {
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .main {
+    padding: 20px;
   }
 }
